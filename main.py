@@ -229,7 +229,7 @@ while running:
             restart_button, quit_button = draw_victory_screen()
             if pygame.mouse.get_pressed()[0]:
                 if restart_button.collidepoint(mouse_pos):
-                    blocks = generate_blocks()
+                    blocks = generate_blocks(patterns)
                     slots = []
                     game_active = False
                     time_left = 90 * 1000  # Reset to default time
